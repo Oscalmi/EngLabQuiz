@@ -1,0 +1,275 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+  font-family: "Chakra Petch", sans-serif;/* Define a fonte padrão como Chakra Petch */
+  background-color: #DDDDDD;/* Define a cor de fundo da página */
+  display: flex;/* Usa Flexbox para o layout */
+  flex-direction: column;/* Alinha os itens na vertical */
+  align-items: center;/* Centraliza os itens horizontalmente */
+  justify-content: center;/* Centraliza os itens verticalmente */
+  height: 100vh;/* Preenche a altura total da viewport */
+  margin: 0;/* Remove a margem padrão */
+  padding: 1%;/* Remove o padding padrão */
+  min-height: 100vh;/* Define a altura mínima como 100% da viewport */
+  overflow-y: auto; /* Habilita a rolagem vertical no body */
+  position: relative; /* Posiciona o body como relativo */
+  padding-top: 100px; /* Adiciona padding no topo para o header */
+  padding-bottom: 60px; /* Adiciona padding na parte inferior para o footer */
+}
+
+header {
+  background-color: #f0f0f0;/* Define a cor de fundo do cabeçalho */
+  padding: 0.5rem;/* Define o padding do cabeçalho */
+  text-align: center;/* Centraliza o texto do cabeçalho */
+  position: fixed; /* Fixa o header no topo da página */
+  top: 0; /* Posiciona o header no topo */
+  left: 0; /* Posiciona o header na esquerda */
+  width: 100%; /* Define a largura do header como 100% */
+  z-index: 10; /* Define o nível do z-index para o header */
+}
+
+main {
+  flex: 1;/* Ocupa todo o espaço restante */
+  display: flex;/* Define o layout do conteúdo principal */
+  flex-direction: column;/* Alinha os itens na vertical */
+  align-items: center;/* Centraliza os itens horizontalmente */
+  margin-top: 20px;/* Define a margem superior do conteúdo principal */
+
+}
+
+/* Estilos gerais da container */
+.container {
+  max-width: 800px;/* Define a largura máxima do container */
+  margin: 0 auto;/* Centraliza o container horizontalmente */
+  gap: 1rem;/* Define o espaçamento entre os elementos */
+  padding: 2rem;/* Define o padding interno */
+  margin-top: 2rem;/* Define a margem superior */
+}
+
+.respostas {
+  display: flex;/* Define o layout das respostas */
+  flex-direction: column;/* Alinha os itens na vertical */
+  gap: 10px;/* Define o espaçamento entre as respostas */
+  width: 100%;/* Define a largura das respostas */
+}
+
+/* Estiliza a imagem de topo da página */
+.imagem-fundo {
+  position: absolute;/* Define o posicionamento absoluto da imagem de fundo */
+  top: 0;/* Posiciona a imagem no topo */
+  left: 0;/* Posiciona a imagem à esquerda */
+  width: 100vw;/* Define a largura da imagem de fundo */ 
+  height: 100px;/* Define a altura da imagem de fundo */
+  background-color: #6495ED;/* Define a cor de fundo da imagem */
+  background-size: contain;/* Define o tamanho de fundo */
+  background-repeat: no-repeat;/* Define a repetição de fundo */
+  background-position: center;/* Define a posição do fundo */
+  z-index: -1;/* Posiciona o fundo atrás da imagem */
+  flex-direction: column; /* Alinha os itens do header verticalmente */
+}
+
+.imagem {
+  position: absolute;/* Define o posicionamento absoluto da imagem */  
+  top: 0;/* Posiciona a imagem no topo */
+  left: 50%;/* Centraliza a imagem horizontalmente */
+  transform: translateX(-50%);/* Centraliza a imagem horizontalmente */
+  width: 100px;/* Define a largura da imagem */
+  max-width: 100px;/* Define a largura máxima da imagem */
+  padding: 1rem;/* Define o padding da imagem */
+}
+
+/* Estiliza o título da página */
+.titulo {
+  text-align: center;/* Centraliza o título */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+  font-size: 2rem;/* Define o tamanho da fonte */
+  color: #222831;/* Define a cor do texto */
+  text-align: center;/* Centraliza o texto */
+  letter-spacing: 0.1rem;/* Define o espaçamento entre as letras */
+}
+
+/* Estiliza as seções da página */
+section {
+  display: flex;/* Usa Flexbox para o layout */
+  flex-direction: column;/* Alinha os itens na vertical */
+  align-items: center;/* Centraliza os itens horizontalmente */
+  margin-bottom: 3rem;/* Define a margem inferior das seções */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resposta-questão {
+  width: 60rem;/* Define a largura máxima da caixa de resultados */
+  height: 46vh;/* Define a altura máxima da caixa de resultados */
+  overflow-y: auto;/* Adiciona rolagem vertical se necessário */
+  margin-top: 0.5rem;/* Define a margem superior */
+  padding: 0.5rem;/* Define o padding interno */
+  border-radius: 0.6rem;/* Define a borda arredondada */
+  /* display: none; */ /* Torna a class invisível */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+  background: #FFFFFF;/* Define a cor de fundo dos itens */
+  border-radius: 0.6rem;/* Define a borda arredondada */
+  padding: 1rem;/* Define o padding interno */
+  margin-bottom: 1rem;/* Define a margem inferior */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);/* Define a sombra leve */
+  text-align: justify;/* Justifica o texto */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+  font-size: 1.5rem;/* Define o tamanho da fonte */
+  color: #222831;/* Define a cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+  text-decoration: none;/* Remove o sublinhado padrão dos links */
+  color: #30475E;/* Define a cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+  text-decoration: underline;/* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+  color: #45474B;/* Define a cor do texto */
+  margin: 0.5rem 0;/* Define a margem acima e abaixo */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+  background-color: #F5F7F8;/* Define a cor de fundo do rodapé */
+  color: #45474B;/* Define a cor do texto */
+  text-align: center;/* Centraliza o texto */
+  padding: 0;/* Define o padding interno */
+  width: 100%;/* Define a largura total da página */
+  position: absolute;/* Define o posicionamento absoluto */
+  bottom: 0;/* Alinha ao fundo da página */
+  font-size: 1rem;/* Define o tamanho da fonte */
+  position: fixed; /* Fixa o footer no final da página */
+  bottom: 0; /* Posiciona o footer no final */
+  left: 0; /* Posiciona o footer na esquerda */
+  width: 100%; /* Define a largura do footer como 100% */
+  z-index: 10; /* Define o nível do z-index para o footer */
+}
+
+@media (max-width: 768px) {
+  /* Estilos específicos para telas menores que 768px */
+  h1 {
+    font-size: 2rem;/* Define o tamanho da fonte em telas menores */
+    letter-spacing: 0.2rem;/* Define o espaçamento entre letras em telas menores */
+  }
+
+  /* Define a largura dos inputs em telas menores */
+  section input {
+    width: 25rem;
+    /* Define o padding interno em telas menores */
+    padding: 0.8rem;
+  }
+
+  /* Define a largura da caixa de resultados em telas menores */
+  .resultados-pesquisa {
+    width: 40rem;
+    /* Define a altura da caixa de resultados em telas menores */
+    height: 40vh;
+  }
+
+  /* Define o tamanho da fonte dos títulos em telas menores */
+  .item-resultado h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  /* Estilos específicos para telas menores que 480px */
+  h1 {
+    /* Define o tamanho da fonte em telas pequenas */
+    font-size: 1.8rem;
+    /* Define o espaçamento entre letras em telas pequenas */
+    letter-spacing: 0.1rem;
+  }
+
+  /* Define a largura total dos inputs em telas pequenas */
+  section input {
+    width: 17rem;
+  }
+
+  /* Define o padding interno e o tamanho da fonte do botão em telas pequenas */
+  section button {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Define a largura e altura da caixa de resultados em telas pequenas */
+  .resultados-pesquisa {
+    width: 90%;
+    height: 50vh;
+  }
+
+  /* Define o tamanho da fonte dos títulos em telas pequenas */
+  .item-resultado h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Define o tamanho da fonte do rodapé em telas pequenas */
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* Estiliza os botões de resposta */
+.opcao {
+  /* Estilos dos botões de resposta */
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 0.5rem; /* Borda arredondada */
+  font-size: 1rem;
+}
+
+/* Adiciona efeito hover aos botões de resposta */
+.opcao:hover {
+  background-color: #6495ED;
+}
+
+/* Estiliza os botões de navegação */
+.navegacao {
+  /* Define o layout dos botões de navegação */
+  display: flex;
+  /* Distribui os botões igualmente */
+  justify-content: space-between;
+  /* Define a largura dos botões */
+  width: 100%;
+  /* Aumenta o espaço entre as opções e a navegação */
+  margin-top: 0.5rem;
+  /* Adiciona um espaço entre os botões */
+  gap: 1rem;
+}
+
+/* Adiciona efeito hover aos botões de navegação */
+.navegacao button {
+  /* Estilos comuns para os botões de navegação */
+  /* Faz com que cada botão ocupe a mesma largura */
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  background-color: #00008b;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.5rem; /* Borda arredondada */
+}
+
+.navegacao button:hover {
+  background-color: #6495ED;
+}

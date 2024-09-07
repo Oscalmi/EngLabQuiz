@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <!-- Define o tipo de documento como HTML -->
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suporte a caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a configuração de visualização para responsividade -->
+    <link rel="stylesheet" href="style.css"> <!-- Inclui o arquivo CSS externo para estilização -->
+    <title>EngeLab Quiz</title> <!-- Define o título da página -->
+  </head>
+
+  <body>
+    <header>
+        <!-- Seção do cabeçalho -->
+        <div class="imagem-fundo"> <!-- Div para a imagem de fundo -->
+            <img src="engenheiro.jpeg" alt="EngLab" class="imagem"> <!-- Insere a imagem "engenheiro.jpeg" com texto alternativo "EngLab" e classe "imagem" -->
+        </div>
+        <h1 class="titulo">EngeLab Quiz</h1> <!-- Define o título principal do quiz com classe "titulo" --> 
+    </header>
+
+    <main>
+      <!-- Seção principal do conteúdo -->
+      <section class="container">
+        <!-- Seção de conteúdo do quiz -->
+        <div class="container">
+          <!-- Div interna para a pergunta -->
+          <h2 id="titulo">Equilíbrio de um Corpo</h2>
+          <!-- Define o título da pergunta com id "titulo" -->
+          <h3 id="pergunta">Para que um corpo rígido esteja em equilíbrio estático, quais condições devem ser atendidas?</h3>
+          <!-- Define a pergunta com id "pergunta" -->
+        </div>
+
+        <div class="respostas">
+          <!-- Div para as opções de resposta -->
+          <button onclick="escolhaA()" class="opcao" id="opcaoA">A soma das forças externas deve ser nula e o momento resultante de todas as forças em relação a qualquer ponto deve ser diferente de zero.</button>
+          <!-- Botão com opção "A" e função "escolhaA()" ao clicar -->
+          <button onclick="escolhaB()" class="opcao" id="opcaoB">A soma das forças externas deve ser diferente de zero e o momento resultante de todas as forças em relação a qualquer ponto deve ser nulo.</button>
+          <!-- Botão com opção "B" e função "escolhaB()" ao clicar -->
+          <button onclick="escolhaC()" class="opcao" id="opcaoC">A soma das forças externas e o momento resultante de todas as forças em relação a qualquer ponto devem ser nulos.</button>
+          <!-- Botão com opção "C" e função "escolhaC()" ao clicar -->
+          <button onclick="escolhaD()" class="opcao" id="opcaoD">A soma das forças externas deve ser nula e o momento resultante de todas as forças em relação a um ponto específico deve ser nulo.</button>
+          <!-- Botão com opção "D" e função "escolhaD()" ao clicar -->
+          <button onclick="escolhaE()" class="opcao" id="opcaoE">Nenhuma das alternativas anteriores.</button>
+          <!-- Botão com opção "E" e função "escolhaE()" ao clicar -->
+        </div>
+
+        <div class="navegacao">
+          <!-- Div para botões de navegação -->
+          <button onclick="anterior()" id="anterior">ANTERIOR</button>
+          <!-- Botão "ANTERIOR" com função "anterior()" ao clicar -->
+          <button onclick="proxima()" id="proximo">PRÓXIMO</button>
+          <!-- Botão "PRÓXIMO" com função "proxima()" ao clicar -->
+        </div>
+      </section>
+      <section id="explicacao" class="resposta-questão">
+        <!-- Seção para a explicação da resposta correta -->
+      </section>
+    </main>
+
+    <footer>
+      <!-- Seção do rodapé -->
+      <p>ALURA - Setembro/2024</p>
+      <!-- Informação sobre a ALURA e o mês de criação -->
+      <p>Imersão Dev com Google Gemini</p>
+      <!-- Informação sobre a Imersão Dev -->
+      <p>Projeto para submissão</p>
+      <!-- Informação sobre o propósito do projeto -->
+    </footer>
+
+    <script src="dados.js"></script>
+    <!-- Inclui o arquivo JavaScript "dados.js" -->
+    <script src="app.js"></script>
+    <!-- Inclui o arquivo JavaScript "app.js" -->
+
+  </body>
+
+</html>
